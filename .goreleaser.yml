@@ -1,0 +1,14 @@
+archives:
+  - files:
+    - UNLICENSE
+    - README.md
+    format_overrides:
+    - goos: windows
+      format: zip
+builds:
+  - main: ./main.go
+    id: "cmd"
+    binary: gontinue
+    goos:
+      - linux
+      - windows
