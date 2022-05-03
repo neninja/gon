@@ -8,7 +8,7 @@ archives:
 builds:
   - main: ./main.go
     id: "cmd"
-    binary: gontinue
+    binary: gon
     goos:
       - linux
       - windows
