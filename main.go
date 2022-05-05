@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"flag"
-	"log"
 	"os"
 	"os/exec"
 )
@@ -20,10 +19,7 @@ func main() {
 		cmd.Stdout = os.Stdout
 		cmd.Stderr = os.Stderr
 
-		err := cmd.Run()
-		if err != nil {
-			log.Fatalf("Erro: %s", err)
-		}
+		_ = cmd.Run()
 
 		_, _ = buf.ReadBytes('\n')
 	}
