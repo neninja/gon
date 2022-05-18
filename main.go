@@ -37,7 +37,7 @@ func main() {
 
 	commands := flag.Args()
 	if len(commands) == 0 {
-		log.Fatal("command is required")
+		log.Fatal("a command is required")
 	}
 
 	command := commands[0]
