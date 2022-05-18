@@ -38,3 +38,10 @@ docker-compose exec app go run main.go echo "funciona!"
 ```sh
 docker-compose exec app go fmt ./...
 ```
+
+### Build e atualização local
+
+```sh
+docker-compose exec app go build
+mv gon ~/.local/bin/gon # Linux
+```
