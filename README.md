@@ -18,14 +18,15 @@ CLI que reexecuta um comando no termimnal com <kbd>enter</kbd> ao invés de <kbd
 
 ## Desenvolvimento
 
-### Setup inicial
+### Ambiente
+
+Para executar e testar é necessário subir o ambiente
 
 ```sh
-docker-compose up -d
-#docker-compose exec app go mod tidy
+make up
 ```
 
-> Pare com ``docker-compose down``
+> Pare com ``make down``
 
 ### Execução
 
@@ -36,13 +37,11 @@ docker-compose exec app go run main.go echo "funciona!"
 ### Linting
 
 ```sh
-docker-compose exec app go fmt ./...
+make fmt
 ```
 
-### Build e atualização local
-
-- Linux
+### Build e atualização local no Linux
 
 ```sh
-docker-compose exec app go build -ldflags="-X 'main.Version=`git describe --tags --abbrev=0`'" && mv -f gon ~/.local/bin/gon
+make selfbuild
 ```
