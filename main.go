@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"flag"
+	"log"
 	"os"
 	"os/exec"
 	"runtime"
@@ -24,7 +25,13 @@ func clear(osName string) {
 func main() {
 	useClear := flag.Bool("c", false, "clear terminal before every run")
 	flag.Parse()
-	command := flag.Args()[0]
+
+	commands := flag.Args()
+	if len(commands) == 0 {
+		log.Fatal("command is required")
+	}
+
+	command := commands[0]
 	args := flag.Args()[1:]
 
 	buf := bufio.NewReader(os.Stdin)
