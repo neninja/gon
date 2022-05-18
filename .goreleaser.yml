@@ -9,6 +9,8 @@ builds:
   - main: ./main.go
     id: "cmd"
     binary: gon
+    ldflags:
+      - -X main.Version={{.Tag}}
     goos:
       - linux
       - windows

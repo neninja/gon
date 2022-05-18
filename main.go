@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"flag"
+	"fmt"
 	"log"
 	"os"
 	"os/exec"
@@ -22,9 +23,17 @@ func clear(osName string) {
 	}
 }
 
+var Version = ""
+
 func main() {
 	useClear := flag.Bool("c", false, "clear terminal before every run")
+	useVersion := flag.Bool("v", false, "version")
 	flag.Parse()
+
+	if *useVersion {
+		fmt.Println(Version)
+		os.Exit(0)
+	}
 
 	commands := flag.Args()
 	if len(commands) == 0 {

@@ -42,6 +42,6 @@ docker-compose exec app go fmt ./...
 ### Build e atualização local
 
 ```sh
-docker-compose exec app go build
+docker-compose exec app go build -ldflags="-X 'main.Version=`git describe --tags --abbrev=0`'"
 mv gon ~/.local/bin/gon # Linux
 ```
