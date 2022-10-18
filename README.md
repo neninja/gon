@@ -45,3 +45,16 @@ make fmt
 ```sh
 make selfbuild
 ```
+
+## Alternativas
+
+### Shell script
+```sh
+while echo "exemplo"; read line; do true; done;
+
+# sugestão de função função para `.bashrc`
+# wrl echo "exemplo"
+#wrl(){
+#	while $@; read line; do true; done;
+#}
+```
