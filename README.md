@@ -52,7 +52,7 @@ make selfbuild
 ```sh
 while echo "exemplo"; read line; do true; done;
 
-# sugestão de função função para `.bashrc`
+# sugestão de função para `.bashrc`
 # wrl echo "exemplo"
 #wrl(){
 #	while $@; read line; do true; done;
