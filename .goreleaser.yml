@@ -1,4 +1,5 @@
 archives:
+  - name_template: "{{.Binary}}_{{.Os}}_{{.Arch}}"
   - files:
     - UNLICENSE
     - README.md
