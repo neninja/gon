@@ -1,11 +1,5 @@
 archives:
   - name_template: "{{.Binary}}_{{.Os}}_{{.Arch}}"
-  - files:
-    - UNLICENSE
-    - README.md
-    format_overrides:
-    - goos: windows
-      format: zip
 builds:
   - main: ./main.go
     id: "cmd"
