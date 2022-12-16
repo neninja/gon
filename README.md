@@ -9,12 +9,23 @@ CLI que reexecuta um comando no terminal com <kbd>enter</kbd> ao invés de <kbd>
 ## Utilização
 
 1. Baixe o [executável](https://github.com/nenitf/gon/releases/latest)
-2. Invoque-o antes do comando (ex: ``./gon -c date "+%H:%M:%S %d/%m/%y"``)
-3. Aperte <kbd>enter</kbd> para repeti-lo 
+2. Invoque-o antes do comando a ser repetido (ex: ``./gon date "+%H:%M:%S %d/%m/%y"``)
+3. Aperte <kbd>enter</kbd> 
 
-> Também pode executar o binário se estiver no `PATH` do sistema, ex: ``gon phpunit``
+> Dica: coloque o binário no `PATH` do sistema para utilizá-lo em qualquer diretório
 
-> Atualização para linux: `curl -L https://github.com/nenitf/gon/releases/latest/download/gon_linux_amd64.tar.gz | tar -xvz`
+### Atualização
+
+- Linux
+
+```sh
+curl -L https://github.com/nenitf/gon/releases/latest/download/gon_linux_amd64.tar.gz | tar -xvz
+```
+
+### Flags
+
+- `-c` limpa o terminal a cada repetição
+- `-v` exibe a versão do *gon*
 
 ## Desenvolvimento
 
