@@ -1,5 +1,6 @@
 archives:
-  - name_template: "{{.Binary}}_{{.Os}}_{{.Arch}}"
+  - format: binary
+    name_template: "{{.Binary}}_{{.Os}}_{{.Arch}}"
 builds:
   - main: ./main.go
     id: "cmd"
