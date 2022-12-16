@@ -1,6 +1,8 @@
 archives:
-  - format: binary
-    name_template: "{{.Binary}}_{{.Os}}_{{.Arch}}"
+  - name_template: "{{.Binary}}_{{.Os}}_{{.Arch}}"
+    format_overrides:
+    - goos: windows
+      format: zip
 builds:
   - main: ./main.go
     id: "cmd"
