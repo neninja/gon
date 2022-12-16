@@ -4,7 +4,7 @@
 
 ![Meme bob esponsa cansado](./bob-cansado.jpg)
 
-CLI que reexecuta um comando no termimnal com <kbd>enter</kbd> ao invés de <kbd>↑</kbd><kbd>enter</kbd>
+CLI que reexecuta um comando no terminal com <kbd>enter</kbd> ao invés de <kbd>↑</kbd><kbd>enter</kbd>
 
 ## Utilização
 
