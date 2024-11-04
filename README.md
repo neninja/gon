@@ -8,7 +8,7 @@ CLI que reexecuta um comando no terminal com <kbd>enter</kbd> ao invés de <kbd>
 
 ## Utilização
 
-1. Baixe o [executável](https://github.com/nenitf/gon/releases/latest)
+1. Baixe o [executável](https://github.com/neninja/gon/releases/latest)
 2. Invoque-o antes do comando a ser repetido (ex: ``./gon date "+%H:%M:%S %d/%m/%y"``)
 3. Aperte <kbd>enter</kbd> 
 
@@ -19,7 +19,7 @@ CLI que reexecuta um comando no terminal com <kbd>enter</kbd> ao invés de <kbd>
 - Linux
 
 ```sh
-curl -L https://github.com/nenitf/gon/releases/latest/download/gon_linux_amd64.tar.gz | tar -xvz
+curl -L https://github.com/neninja/gon/releases/latest/download/gon_linux_amd64.tar.gz | tar -xvz
 ```
 
 ### Flags
